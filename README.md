@@ -9,6 +9,8 @@ The observed commercial fishery catches for the hindcast period (1991–2017) ar
 
 Anomalies for lower trophic level groups that were used to simulate climate forcing in these simulations, were derived from the results of Hermann et al. (2019). The data in these files have been summarized and processed for use with our Rpath model of the eastern Bering Sea and these simulations. Separate csv files used for each earth system model-RCP combination in our simulations are included in the climate_scenes folder. The simulation results from Hermann et al. (2019) can be found at https://data.pmel.noaa.gov/aclim/thredds/catalog.html.
 
+The ACLIM_1.0_rpath_Sims folder contains the scripts used to run the simulations. Each script corresponds to a unique combination of earth system model-RCP-fishery managment scenario (e.g., CESM-RCP 4.5-status quo fishery managment). Also, in this folder is a script named rpath_graphs.R which contains a number of helper functions that are used in the other scripts.
+
 The ACLIM_1.0_clean folder contains the scripts needed to reproduce the plots found in Whitehouse et al. (2021). The quantities folder contains several scripts which calculate a number of intermediate quantities needed to make the plots, such as the outlines of the polygons. The plots folder contains the scripts that generate the plots.
 
 
