@@ -80,7 +80,7 @@ basescene91 <- rsim.scenario(bal, unbal, years = all_years91) # Ecosim params
 # Set up hindcast fishing, turn off fishing effort
 scene.full91 <- basescene91
 # Zero our effort, freeze Discards.offal
-scene.full91 <- adjust.fishing(scene.full91, "Effort", all_gears, all_years91, value = 0.0)
+scene.full91 <- adjust.fishing(scene.full91, "ForcedEffort", all_gears, all_years91, value = 0.0)
 scene.full91$forcing$ForcedBio[,"Discards.offal"] <- B_equil["Discards.offal"]
 # Read fisheries Catch file, convert units
 catchdat <- read.csv("scenes/EBS_ACLIM_72_BIO_catch_2017.csv", header=TRUE, row.names=1, dec=".")
